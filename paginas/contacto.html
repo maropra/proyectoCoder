@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <title>Puntada Libre - Contacto</title>
+</head>
+
+<body>
+
+    <!--Encabezado de página-->
+
+    <header class="header">
+        <nav class="navBar">
+            <a href="index.html"><img src="../img/logo.png" alt="logo" class="navBar__logo"></a>
+            <ul class="navBar__ul">
+                <li class="navBar__li"><a class="navBar__link" href="index.html">Inicio</a></li>
+                <li class="navBar__li"><a class="navBar__link" href="conocenos.html">Conocenos</a></li>
+                <li class="navBar__li"><a class="navBar__link" href="productos.html">Productos</a></li>
+                <li class="navBar__li"><a class="navBar__link" href="talleres.html">Talleres</a></li>
+                <li class="navBar__li"><a class="navBar__link" href="contacto.html">Contacto</a></li>
+                <li class="navBar__li"><a class="navBar__link" href="htpp://facebook.com/puntada-libre"><img
+                            src="../img/facebook.png" alt="" class="navBar__redSocial"></a>
+                </li>
+                <li class="navBar__li"><a class="navBar__link" href="htpp://instagram.com/puntada-libre"><img
+                            src="../img/instagram.png" alt="" class="navBar__redSocial"></a>
+                </li>
+                <li class="navBar__li"><a class="navBar__link" href="htpp://pinterest.com/puntada-libre"><img
+                            src="../img/pinterest.png" alt="" class="navBar__redSocial"></a>
+                </li>
+            </ul>
+        </nav>
+        <section class="header__img"></section>
+        <h1 class="header__titulo">Contactanos</h1>
+    </header>
+
+    <!--Sector mapa-->
+
+    <main>
+        <section class="mapa">
+            <iframe class="mapa__mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.333941880195!2d-58.398255485763706!3d-34.595716264579764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca966c8dab57%3A0xbe67c180c5dcca0a!2sAv.%20Santa%20Fe%20%26%20Ayacucho%2C%20C1123%20CABA!5e0!3m2!1ses-419!2sar!4v1616259940286!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <ul class="mapa__lista">
+                <li class="mapa__item">
+                    <img class="mapa__icono" src="../img/iconos/celnegro.png" alt="">
+                    <a class="mapa__link" href="tel:+49.157.0156">+49 157 0156</a>
+                </li>
+                <li class="mapa__item">
+                    <img class="mapa__icono" src="../img/iconos/telnegro.png" alt="">
+                    <a class="mapa__link" href="tel:+1(555)5309">(555) 5309</a>
+                </li>
+                <li class="mapa__item">
+                    <img class="mapa__icono" src="../img/iconos/mailnegro.png" alt="">
+                    <a class="mapa__link" href="mailto:puntada-libre@gmail.com">puntada-libre@gmail.com</a>
+                </li>
+                <li class="mapa__item">
+                    <img class="mapa__icono" src="../img/iconos/mapanegro.png" alt="">
+                    <a class="mapa__link" href="#" target="_blank">Av. Santa Fé y Ayacucho</a>
+                </li>
+            </ul>
+        </section>
+
+        <!--Formulario-->
+
+        <form class="form" action="/" method="post">
+            <div class="form__caja">
+                <div class="form__contenedor">
+                    <label class="form__label" for="nombre">Nombre</label>
+                    <input class="form__input" id="nombre" type="text" name="nombre">
+                </div>
+
+                <div class="form__contenedor">
+                    <label class="form__label" for="mail">Mail</label>
+                    <input class="form__input" id="mail" type="email" name="mail" required>
+                </div>
+
+                <div class="form__contenedor">
+                    <label class="form__label" for="tema">¿De qué se trata tu consulta?</label>
+                    <select class="form__input" name="tema" id="tema">
+                        <option class="form__opcion" value="talleres">Talleres</option>
+                        <option class="form__opcion" value="productos">Productos</option>
+                        <option class="form__opcion" value="bordados personalizados">Bordados personalizados</option>
+                        <option class="form__opcion" value="otros">Otras consultas</option>
+                    </select>
+                </div>
+
+                <div class="form__contenedor form__contenedor--row">
+                    <label class="form__label form__label--check" for="subscripcion">Quiero recibir noticias de Puntada
+                        Libre</label>
+                    <input class="form__input form__input--check" type="checkbox" name="sub" id="subscripcion">
+                </div>
+
+                <div class="form__contenedor">
+                    <label class="form__label" for="consulta">Escribinos tu consulta</label>
+                    <br>
+                    <textarea class="form__consulta" name="msj" id="consulta" cols="30" rows="10">Escribí acá</textarea>
+                </div>
+
+                <div class="form__contenedor form__contenedor--row">
+                    <input class="form__boton" type="submit" value="Enviar">
+                    <input class="form__boton" type="reset" value="Limpiar">
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <!--Pie de página-->
+
+    <footer class="footer">
+        <!--Seccion contactanos-->
+        <div class="footer__contenedor">
+            <h3 class="footer__titulo">Contactanos</h3>
+            <ul class="footer__ul">
+                <li class="footer__li">
+                    <img class="footer__icono" src="../img/iconos/celblanco.png" alt="" width="25px">
+                    <a class="footer__link" href="tel:+49.157.0156">+49 157 0156</a>
+                </li>
+                <li class="footer__li">
+                    <img class="footer__icono" src="../img/iconos/telblanco.png" alt="" width="25px">
+                    <a class="footer__link" href="tel:+1(555)5309">(555) 5309</a>
+                </li>
+                <li class="footer__li">
+                    <img class="footer__icono" src="../img/iconos/mailblanco.png" alt="" width="25px">
+                    <a class="footer__link" href="mailto:puntada-libre@gmail.com">puntada-libre@gmail.com</a>
+                </li>
+                <li class="footer__li">
+                    <img class="footer__icono" src="../img/iconos/mapablanco.png" alt="" width="25px">
+                    <a class="footer__link" href="#" target="_blank">Dirección</a>
+                </li>
+            </ul>
+        </div>
+        <!--Seccion subscribite-->
+        <div class="footer__contenedor">
+            <h3 class="footer__titulo">Subscribite</h3>
+            <p class="footer__texto">Lorem ipsum dolor sit amet consectetur</p>
+            <label for="email">Ingresá tu mail</label>
+            <input class="footer__input" type="email" id="email">
+            <button class="footer__boton">Enviar</button>
+        </div>
+        <!--Seccion links de navegacion-->
+        <div class="footer__contenedor">
+            <ul class="footer__ul">
+                <li class="footer__li"><a class="footer__link" href="index.html">Inicio</a></li>
+                <li class="footer__li"><a class="footer__link" href="conocenos.html">Conocenos</a></li>
+                <li class="footer__li"><a class="footer__link" href="productos.html">Productos</a></li>
+                <li class="footer__li"><a class="footer__link" href="talleres.html">Talleres</a></li>
+                <li class="footer__li"><a class="footer__link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <p class="copyright">Copyright Puntada Libre - 2021</p>
+
+</body>
+
+</html>
