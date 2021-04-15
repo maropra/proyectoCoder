@@ -1,3 +1,16 @@
-h1{
-    font-size: 3rem;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Work+Sans:wght@300;400&display=swap');
+
+:root{
+    --color-principal:#B7E3E4;
+    --color-secundario:#F57972;
+    --color-complementario:#FFC500;
+    --fuente-principal: 'Work Sans', sans-serif;
+    --fuente-titulos: 'Montserrat', sans-serif;
+}
+
+header{
+    background-image: url(../img/portada.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
