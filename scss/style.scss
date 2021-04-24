@@ -5,6 +5,18 @@ $color-claro: rgba(183, 227, 228, 0.9);
 $color-accesorio: #FFC500;
 $tamanio-titulo: 5rem;
 
+@mixin boton {
+    display: block;
+    padding: 0.5rem;
+    width: 20%;
+    border-radius: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400px;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+
 /* Estilos generales */
 *{
     margin: 0;
@@ -109,17 +121,9 @@ body{
         margin-bottom: 20px;
     }
     &__link{
-        display: block;
         background-color: $color-accesorio;
-        padding: 0.5rem;
-        width: 20%;
-        border-radius: 20px;
         color: white;
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 400px;
-        font-size: 1rem;
-        text-decoration: none;
-        text-align: center;
+        @include boton;
     }
     &__link--blanco{
         @extend .secc__link;
