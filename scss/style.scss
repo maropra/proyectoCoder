@@ -168,9 +168,11 @@ body{
         width: 400px;
         height: 400px;
         border-radius: 1rem;
+        opacity: 0.7;
+        transition: all 1s;
     }
     &__img:hover{
-        opacity: 0.7;
+        opacity: 1;
     }
 }
 

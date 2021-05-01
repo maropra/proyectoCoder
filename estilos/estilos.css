@@ -134,9 +134,11 @@ body {
   .productos__img {
     width: 400px;
     height: 400px;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    opacity: 0.7;
+    transition: all 1s; }
   .productos__img:hover {
-    opacity: 0.7; }
+    opacity: 1; }
 
 /* contenido principal de "talleres.html" */
 .taller {
