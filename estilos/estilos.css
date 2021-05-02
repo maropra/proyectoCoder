@@ -22,17 +22,7 @@ body {
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900px;
-    font-size: 5rem;
-    animation-name: slide;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards; }
-
-@keyframes slide {
-  0% {
-    margin-top: 100%; }
-  100% {
-    margin-top: -100px; } }
+    font-size: 5rem; }
 
 .nav-link {
   font-family: 'Work Sans', sans-serif;
@@ -297,3 +287,53 @@ body {
   font-weight: 300px;
   font-size: 0.8rem;
   padding: 10px; }
+
+/*********************************Media Queries********************/
+@media (max-width: 768px) {
+  .header .header__titulo {
+    font-size: 3rem; }
+  .secc {
+    flex-direction: column; }
+  .secc__descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem; }
+  .secc__descripcion--azul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem; }
+  .footer {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh; }
+  .footer__contenedor {
+    height: fit-content;
+    margin: 10px; } }
+
+@media (max-width: 450px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100%; }
+  .header__titulo {
+    font-size: 2rem;
+    align-self: center; }
+  .secc {
+    padding: 40px; }
+  .secc__titulo {
+    font-size: 1.5rem; }
+  .secc__texto {
+    font-size: 14px;
+    line-height: 30px; }
+  .secc__link, .secc__link--blanco {
+    font-size: 14px;
+    width: fit-content; }
+  .secc__img {
+    width: 100%; } }
