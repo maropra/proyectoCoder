@@ -50,12 +50,22 @@ body{
 .nav-link{
     font-family: 'Work Sans', sans-serif;
     font-weight: 400px;
+    font-size: 1.1rem;
+    margin: 0 10px;
 }
 
 /* Contenido principal */
+main h1{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 40px;
+}
 
 .secc {
-   padding: 40px 100px;
+   padding: 0 5%;
    display: flex;
    align-items: center;
    &__descripcion--azul{
@@ -108,7 +118,7 @@ body{
     }
     &__texto--center{
         text-align: center;
-        margin: 40px 100px 0px 100px;
+        margin: 20px 100px 20px 100px;
     }
 }
 .secc--azul{
@@ -159,9 +169,9 @@ body{
     &__img{
         width: 400px;
         height: 400px;
-        border-radius: 1rem;
-        opacity: 0.7;
-        transition: all 1s;
+        border-radius: 0.5rem;
+        opacity: 0.8;
+        transition: all 0.5s;
     }
     &__img:hover{
         opacity: 1;
@@ -169,104 +179,82 @@ body{
 }
 
 /* contenido principal de "talleres.html" */
-
 .taller{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
-    align-items: center;
-    grid-gap: 2rem 1rem;
-    margin: 4rem 4rem;
-  }
-
-/* contenido principal de "contacto.html" */
-.mapa{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    &__mapa{
-        margin-right: 2rem;
-    }
-    &__lista{
+    &__contenedor{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        height: 200px;
+        gap: 20px;
+        width: 70%;
+        margin: 30px auto;
     }
-    &__item{
-        list-style: none;
+    &__card{
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        background-color:#efefef;
+        padding: 20px 50px;
+        border-top: 5px solid $color-accesorio;
+        border-radius: 0.5rem;
+        border-top-left-radius:0 ;
     }
-    &__icono{
-        width: 20px;
-        margin-right: 10px;
+    &__nombre{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900px;
+        font-size: 1.5rem;
     }
-    &__link{
-        text-decoration: none;
-        color: black;
+    &__fecha{
+        font-style: italic;
     }
+}
+
+/* contenido principal de "contacto.html" */
+.contenedorContacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    margin: 3rem 0;
 }
 
 /* formulario */
 
 .form{
-    background: linear-gradient(360deg, hsla(46, 100%, 50%, 1) 0%, hsla(46, 80%, 64%, 1) 100%);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: fit-content;
-    width: 60%;
-    color: whitesmoke;
-    margin: 4rem auto;
-    padding: 2rem;
-    border-radius: 1rem;
-    &__caja{
-        margin: auto;
-    }
-    &__contenedor{
+    gap: 10px;
+    width: 40%;
+    &__row{
         display: flex;
-        flex-direction: column;  
-        margin-bottom: 5px;  
+        gap: 10px;
     }
-    &__contenedor--row{
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+    &__column{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
-    &__label{
-        margin-bottom: 5px;
+    label{
+        margin: 0;
+        font-size: 0.9rem;
     }
-    &__input{
-        background-color: rgba(255, 255, 255, 0);
-        color: whitesmoke;
+    textarea{
+        background-color: #efefef;
         border: none;
-        border-bottom: 1px solid whitesmoke;
         outline: none;
-        width: 300px;
+        height: 80px;
+        font-size: 12px;
+        padding: 10px;
+    }
+    input[type=text], input[type=email], select, option{
+        background-color: #efefef;
+        border: none;
+        outline: none;
+        font-size: 12px;
+    }
+    select{
         height: 30px;
-        margin-bottom: 15px;
     }
-    &__input--check{
-        width: 15px;
-        height: 15px;
-        margin-left: 10px;
-        margin-bottom: 5px;
-    }
-    &__opcion{
-        font-family: 'Work Sans', sans-serif;
-        color: $color-accesorio;
-    }
-    &__consulta{
-        background-color:rgba(255, 255, 255, 0);
-        color: whitesmoke;
-        border: 1px solid white;
-        outline: none;
-        width: 300px;
-        height: 100px;
-        font-family: 'Work Sans', sans-serif;
+    input[type=text], input[type=email]{
+        width: 100%;
+        height: 30px;
     }
     &__boton{
         display: inline-block;
@@ -329,7 +317,7 @@ body{
     &__input{
         border: none;
         border-bottom: 1px solid whitesmoke;
-        background-color: $color-fuerte;
+        background-color: #efefef;
         outline: none;
         margin-bottom: 10px;
     }
@@ -354,12 +342,16 @@ body{
     font-family: 'Work Sans', sans-serif;
     font-weight: 300px;
     font-size: 0.8rem;
-    padding: 10px;
+    padding: 4px;
+    margin-bottom: 0;
+    p{
+        margin-bottom: 0;
+    }
 }
 
 /*********************************Media Queries********************/
 
-@media (max-width: 768px){
+@media (max-width: 768px) and (min-width: 449px){
     .header .header__titulo{
         font-size: 3rem;
     }
