@@ -40,25 +40,25 @@ main h1 {
   margin-top: 40px; }
 
 .secc {
-  padding: 0 5%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
   /*imagenes principales*/ }
-  .secc__descripcion--azul {
-    margin-left: 2.5rem; }
+  .secc__descripcion {
+    width: 40%; }
   .secc__titulo {
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900px;
-    font-size: 2.3rem;
-    margin-bottom: 20px; }
+    font-size: 2.3rem; }
   .secc__texto {
     color: black;
     font-family: 'Work Sans', sans-serif;
     font-weight: 300px;
     font-size: 16px;
-    line-height: 1.7rem;
-    margin-bottom: 20px; }
+    line-height: 1.7rem; }
   .secc__link, .secc__link--blanco {
     background-color: #FFC500;
     color: white;
@@ -82,21 +82,24 @@ main h1 {
     background-color: #FFC500;
     color: white;
     text-decoration: none; }
+  .secc__fotos {
+    width: 40%; }
   .secc__img {
-    width: 470px;
-    height: 450px;
+    width: 100%;
+    max-height: 450px;
     box-shadow: 0px 10px 12px 0px rgba(0, 0, 0, 0.3); }
-  .secc__img--sm {
-    width: 420px;
-    height: 450px; }
 
 .secc--azul {
   background-color: rgba(183, 227, 228, 0.9);
-  flex-direction: row-reverse; }
+  flex-direction: row-reverse;
+  padding: 30px 0; }
 
 /* contenido principal de "conocenos.html" */
+.team {
+  width: 80%;
+  margin: auto; }
+
 .conocenos {
-  padding: 0 5%;
   display: flex;
   align-items: center; }
   .conocenos__texto {
@@ -105,18 +108,15 @@ main h1 {
     font-weight: 300px;
     font-size: 16px;
     line-height: 1.7rem;
-    margin-bottom: 20px;
     text-align: center;
-    margin: 20px 100px 20px 100px; }
+    margin: 20px 0 40px; }
 
 .equipo {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
-  height: 150vh;
-  width: 90%;
-  margin: auto; }
+  gap: 30px; }
   .equipo__bloque {
     display: flex;
     flex-direction: column;
@@ -137,11 +137,12 @@ main h1 {
 
 /* contenido principal de "productos.html" */
 .productos {
-  height: 250vh;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: space-evenly; }
+  justify-content: center;
+  align-content: center;
+  gap: 25px;
+  margin: 30px 0; }
   .productos__img {
     width: 400px;
     height: 400px;
@@ -180,9 +181,11 @@ main h1 {
 .contenedorContacto {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row-reverse;
   gap: 2rem;
-  margin: 3rem 0; }
+  margin: 3rem 0;
+  height: calc(100vh - 89px - 191px); }
 
 /* formulario */
 .form {
