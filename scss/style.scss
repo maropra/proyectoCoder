@@ -395,11 +395,11 @@ main h1{
     }
     .footer{
         flex-direction: column;
-        justify-content: space-around;
-        height: 100vh;
+        justify-content: center;
+        gap: 10px;
         &__contenedor{
             height: fit-content;
-            margin: 10px;
+            padding-bottom: 0;
         }
         &__ul{
             align-items: center;
@@ -427,13 +427,16 @@ main h1{
     .secc{
         padding: 40px;
     }
+    .secc__descripcion{
+        width: 100%;
+    }
     .secc__titulo{
         font-size: 1.5rem;
     }
     .secc__texto{
         font-size: 14px;
         line-height: 30px;
-        
+
     }
     .secc__link{
         font-size: 14px;
@@ -446,13 +449,31 @@ main h1{
     main h1{
         font-size: 2rem;
     }
+    .taller__descripcion, .conocenos__texto{
+        font-size: 14px;
+    }
     // Talleres
     .taller__contenedor{
         width: 90%;
     }
+    // Productos
+    .productos__img{
+        width: 90%;
+        height: auto;
+    }
     // Contacto
+    .contenedorContacto{
+        flex-direction: column-reverse;
+    }
     .form{
         width: 90%;
     }
-    
+}
+@media (max-width: 360px){
+    .footer__suscripcion form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
 }
