@@ -365,27 +365,33 @@ main h1{
 
 /*********************************Media Queries********************/
 
-@media (max-width: 768px) and (min-width: 449px){
+@media (max-width: 768px) {
     .header .header__titulo{
         font-size: 3rem;
     }
     .secc {
         flex-direction: column;
-    }
-    .secc__descripcion{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 2rem;
-        width: 85%;
-    }
-    .secc__descripcion--azul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 2rem;
+        &__texto{
+            text-align: center;
+        }
+        &__descripcion{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 2rem;
+            width: 85%;
+        }
+        &__descripcion--azul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 2rem;
+        }
+        &__fotos{
+            width: 80%;
+        }
     }
     .footer{
         flex-direction: column;
@@ -415,7 +421,7 @@ main h1{
         width: 100%;
     }
     .header__titulo{
-        font-size: 2rem;
+        font-size: 2rem !important;
         align-self: center;
     }
     .secc{
@@ -427,6 +433,7 @@ main h1{
     .secc__texto{
         font-size: 14px;
         line-height: 30px;
+        
     }
     .secc__link{
         font-size: 14px;
@@ -434,6 +441,18 @@ main h1{
     }
     .secc__img{
         width: 100%;
+    }
+    // Conocenos
+    main h1{
+        font-size: 2rem;
+    }
+    // Talleres
+    .taller__contenedor{
+        width: 90%;
+    }
+    // Contacto
+    .form{
+        width: 90%;
     }
     
 }
