@@ -50,14 +50,14 @@ main h1 {
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900px;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-bottom: 20px; }
   .secc__texto {
     color: black;
     font-family: 'Work Sans', sans-serif;
     font-weight: 300px;
-    font-size: 18px;
-    line-height: 2rem;
+    font-size: 16px;
+    line-height: 1.7rem;
     margin-bottom: 20px; }
   .secc__link, .secc__link--blanco {
     background-color: #FFC500;
@@ -89,15 +89,26 @@ main h1 {
   .secc__img--sm {
     width: 420px;
     height: 450px; }
-  .secc__texto--center {
-    text-align: center;
-    margin: 20px 100px 20px 100px; }
 
 .secc--azul {
   background-color: rgba(183, 227, 228, 0.9);
   flex-direction: row-reverse; }
 
 /* contenido principal de "conocenos.html" */
+.conocenos {
+  padding: 0 5%;
+  display: flex;
+  align-items: center; }
+  .conocenos__texto {
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300px;
+    font-size: 16px;
+    line-height: 1.7rem;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 20px 100px 20px 100px; }
+
 .equipo {
   display: flex;
   flex-flow: row wrap;
@@ -181,6 +192,7 @@ main h1 {
   width: 40%; }
   .form__row {
     display: flex;
+    align-items: center;
     gap: 10px; }
   .form__column {
     display: flex;
@@ -224,26 +236,27 @@ main h1 {
   color: white;
   font-family: 'Work Sans', sans-serif;
   font-weight: 300px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  height: 35vh; }
+  align-items: center; }
   .footer__contenedor {
     display: flex;
-    height: 25vh;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 10px 0; }
+  .footer__suscripcion {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin: 20px 0; }
+    gap: 5px; }
   .footer__titulo {
-    font-size: 1.2rem;
-    margin-bottom: 1rem; }
+    font-size: 1rem; }
   .footer__ul {
     display: flex;
-    height: 20vh;
     flex-direction: column;
-    justify-content: space-between; }
+    gap: 8px; }
   .footer__li {
     list-style: none; }
   .footer__link {
@@ -252,14 +265,10 @@ main h1 {
   .footer__link:hover {
     color: gainsboro;
     text-decoration: none; }
-  .footer__icono {
-    width: 15px; }
   .footer__input {
     border: none;
-    border-bottom: 1px solid whitesmoke;
     background-color: #efefef;
-    outline: none;
-    margin-bottom: 10px; }
+    outline: none; }
   .footer__boton {
     display: inline-block;
     background-color: whitesmoke;
