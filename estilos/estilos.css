@@ -323,7 +323,10 @@ main h1 {
       height: fit-content;
       margin: 10px; }
     .footer__ul {
-      align-items: center; } }
+      align-items: center; }
+  .contenedorContacto {
+    flex-direction: column;
+    height: fit-content; } }
 
 @media (max-width: 450px) {
   .header {
