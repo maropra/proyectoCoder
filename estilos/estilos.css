@@ -8,27 +8,32 @@
 body {
   font-family: 'Work Sans', sans-serif; }
 
+.nav-link {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400px;
+  font-size: 1.1rem;
+  margin: 0 10px;
+  transition: all 500ms; }
+
 /*Encabezado de pagina*/
 .header {
   background-image: url(../img/portada.png);
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 88.5px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  height: calc(100vh - 88.5px); }
+  .header__layer {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .header__titulo {
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900px;
     font-size: 5rem; }
-
-.nav-link {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400px;
-  font-size: 1.1rem;
-  margin: 0 10px; }
 
 /* Contenido principal */
 main h1 {
@@ -43,7 +48,7 @@ main h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   margin: 30px 0;
   /*imagenes principales*/ }
   .secc__descripcion {
@@ -70,7 +75,8 @@ main h1 {
     font-weight: 400px;
     font-size: 1rem;
     text-decoration: none;
-    text-align: center; }
+    text-align: center;
+    transition: background 500ms; }
   .secc__link:hover, .secc__link--blanco:hover {
     background-color: rgba(255, 197, 0, 0.7);
     color: white;
@@ -231,7 +237,11 @@ main h1 {
     color: #FFC500;
     font-size: 1.1rem;
     margin: 5px;
-    padding: 5px; }
+    padding: 5px;
+    transition: background 500ms; }
+  .form__boton:hover {
+    color: whitesmoke;
+    background-color: #FFC500; }
 
 /*Pie de pagina*/
 .footer {
@@ -270,7 +280,7 @@ main h1 {
     text-decoration: none; }
   .footer__input {
     border: none;
-    background-color: #efefef;
+    background-color: rgba(0, 0, 0, 0.3);
     outline: none; }
   .footer__boton {
     display: inline-block;
@@ -283,7 +293,11 @@ main h1 {
     font-weight: 300px;
     font-size: 1rem;
     text-decoration: none;
-    text-align: center; }
+    text-align: center;
+    transition: background 500ms; }
+  .footer__boton:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white; }
 
 .copyright {
   background-color: white;

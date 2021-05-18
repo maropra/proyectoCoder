@@ -15,6 +15,8 @@ $tamanio-titulo: 5rem;
     font-size: 1rem;
     text-decoration: none;
     text-align: center;
+    transition: background 500ms;
+    
 }
 
 /* Estilos generales */
@@ -28,16 +30,31 @@ body{
     font-family: 'Work Sans', sans-serif;
 }
 
+// Barra de navegación
+.nav-link{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400px;
+    font-size: 1.1rem;
+    margin: 0 10px;
+    transition: all 500ms;
+}
+
 /*Encabezado de pagina*/
 .header{
     background-image: url(../img/portada.png);
     background-size: cover;
     background-position: center;
     height: calc(100vh - 88.5px);
-    display: flex;
+    
+    &__layer{
+        background-color: rgba(255, 255, 255, 0.3);
+        width: 100%;
+        height: 100%;
+        display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    }
     &__titulo{
         color: black;
         font-family: 'Montserrat', sans-serif;
@@ -45,13 +62,6 @@ body{
         font-size: 5rem;
     }
 
-}
-
-.nav-link{
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400px;
-    font-size: 1.1rem;
-    margin: 0 10px;
 }
 
 /* Contenido principal */
@@ -68,7 +78,7 @@ main h1{
    display: flex;
    align-items: center;
    justify-content: center;
-   gap: 30px;
+   gap: 40px;
    margin: 30px 0;
    &__descripcion{
        width: 40%;
@@ -90,6 +100,7 @@ main h1{
         background-color: $color-accesorio;
         color: white;
         @include boton;
+        
     }
     &__link:hover{
         background-color: rgba(255, 197, 0, 0.7);
@@ -100,6 +111,7 @@ main h1{
         @extend .secc__link;
         background-color: whitesmoke;
         color: $color-accesorio;
+        
     }
     &__link--blanco:hover{
         background-color: $color-accesorio;
@@ -146,8 +158,6 @@ main h1{
     justify-content: center;
     align-content: center;
     gap: 30px;
-    // width: 80%;
-    // margin: auto;
     &__bloque{
         display: flex;
         flex-direction: column;
@@ -283,6 +293,11 @@ main h1{
         font-size: 1.1rem;
         margin: 5px;
         padding: 5px;
+        transition: background 500ms;
+    }
+    &__boton:hover{
+        color: whitesmoke;
+        background-color: $color-accesorio;
     }
 
 }
@@ -332,7 +347,7 @@ main h1{
     }
     &__input{
         border: none;
-        background-color: #efefef;
+        background-color: rgba(0, 0, 0, 0.3);
         outline: none;
     }
     &__boton{
@@ -347,6 +362,12 @@ main h1{
         font-size: 1rem;
         text-decoration: none;
         text-align: center;
+        transition: background 500ms;
+    }
+    &__boton:hover{
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        
     }
 }
 
